@@ -5,7 +5,6 @@ var database = require('./../models/orders');
 // Orders Controller
 router.route('/')
   .get(function (req, res) {
-
     database.getAllPizzaOrders(req, res);
   })
   .post(function (req, res) {

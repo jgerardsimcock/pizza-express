@@ -4,10 +4,13 @@ $(document).ready(function(){
 $.ajax('/orders', {
     method: "GET",
     success: function(data){
-      console.log(data);
-      console.log(data[0].toppings);
-      console.log(data[0].sizes);
-
+      for(var i = 0; i< data.length; i++){
+        var veggies = data[i].toppings.veggies;
+        var meat = data[i].toppings.meats;
+        var size = data[i].size;
+        var pizza = size + meat + veggies;
+        $('.order-list').append('<li> ' + pizza + ' </li>');
+      }
     },
     failure: function(error){
       console.log(error);
