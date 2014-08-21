@@ -2,10 +2,10 @@ var express = require('express');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var placeOrder = require('./../lib/generateOrder');
-var orders = {}
+var orders = {};
 
 // mongodb URL here
-mongoose.connect();
+mongoose.connect('mongodb://usera:1234@ds063919.mongolab.com:63919/pizza-express');
 
 var OrdersSchema = Schema({
   sizes: String,
