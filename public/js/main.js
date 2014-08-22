@@ -17,6 +17,24 @@ $.ajax('/orders', {
       console.log(error);
     }
 
+
+});
+$('#form').submit(function(event){
+    event.preventDefault();
+    $.ajax("/orders", {
+      method:"POST",
+      data: $('#form').serialize()
+      success: function(data){
+
+    }
+      failure: function(error){
+
+      }
+});
+
+$.ajax('orders/:ordersID', {
+  method: "DELETE",
+
 });
 
 });
