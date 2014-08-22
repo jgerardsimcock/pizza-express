@@ -5,6 +5,7 @@ $.ajax('/orders', {
     method: "GET",
     success: function(data){
       for(var i = 0; i< data.length; i++){
+        console.log(data);
         var veggies = data[i].toppings.veggies;
         var meat = data[i].toppings.meats;
         var size = data[i].size;
