@@ -6,54 +6,53 @@ html
     title Pizza Express!!!
   body
     .container
-      .order-form
-        form#form
-          P Size
-          select(name='size')
-            option(value='small') Small
-            option(value='medium') Medium
-            option(value='large') Large
+      form.order-form
+        p Size
+        select(name='size')
+          option(value='small') Small
+          option(value='medium') Medium
+          option(value='large') Large
 
-          br
-          p Meats
-          input(name='meats[]' value='pepperoni' type='checkbox')
-          | pepperoni
-          input(name='meats[]' value='ham' type='checkbox')
-          | ham
-          input(name='meats[]' value='beef' type='checkbox')
-          | beef
-          input(name='meats[]' value='sausage' type='checkbox')
-          | sausage
-          input(name='meats[]' value='pork' type='checkbox')
-          | pork
-          input(name='meats[]' value='bacon' type='checkbox')
-          | bacon
-          input(name='meats[]' value='chicken' type='checkbox')
-          | chicken
+        br
+        p Meats
+        input(name='toppings.meats[]' value='pepperoni' type='checkbox')
+        | pepperoni
+        input(name='toppings.meats[]' value='ham' type='checkbox')
+        | ham
+        input(name='toppings.meats[]' value='beef' type='checkbox')
+        | beef
+        input(name='toppings.meats[]' value='sausage' type='checkbox')
+        | sausage
+        input(name='toppings.meats[]' value='pork' type='checkbox')
+        | pork
+        input(name='toppings.meats[]' value='bacon' type='checkbox')
+        | bacon
+        input(name='toppings.meats[]' value='chicken' type='checkbox')
+        | chicken
 
-          br
-          p Veggies
-          input(name='veggie[]' value='green peppers' type='checkbox')
-          | green peppers
-          input(name='veggie[]' value='pineapple' type='checkbox')
-          | pineapple
-          input(name='veggie[]' value='mushrooms' type='checkbox')
-          | mushrooms
-          input(name='veggie[]' value='jalapenos' type='checkbox') 
-          | jalapenos
-          input(name='veggie[]' value='garlic' type='checkbox')
-          | garlic
-          input(name='veggie[]' value='olives' type='checkbox')
-          | olives
-          input(name='veggie[]' value='red onions' type='checkbox')
-          | red onions
-          input(name='veggie[]' value='spinach' type='checkbox')
-          | spinach
+        br
+        p Veggies
+        input(name='toppings.veggies[]' value='green peppers' type='checkbox')
+        | green peppers
+        input(name='toppings.veggies[]' value='pineapple' type='checkbox')
+        | pineapple
+        input(name='toppings.veggies[]' value='mushrooms' type='checkbox')
+        | mushrooms
+        input(name='toppings.veggies[]' value='jalapenos' type='checkbox') 
+        | jalapenos
+        input(name='toppings.veggies[]' value='garlic' type='checkbox')
+        | garlic
+        input(name='toppings.veggies[]' value='olives' type='checkbox')
+        | olives
+        input(name='toppings.veggies[]' value='red onions' type='checkbox')
+        | red onions
+        input(name='toppings.veggies[]' value='spinach' type='checkbox')
+        | spinach
 
-          br
-          input(type="submit" value="Submit")
-        .work-header
-        h1 Order Queue
-      .order-list
-        //- orders appear
+        br
+        input(type="submit" value="Submit")
+      .work-header
+      h1 Order Queue
+    .order-list
+      //- orders appear
 
